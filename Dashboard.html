@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Style/Dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">Orange Agent</div>
+            <ul class="menu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="topbar">
+                <div class="user-info">
+                    <p>Welcome, [Employee Name]</p>
+                    <button class="edit-profile-btn">Edit Profile</button>
+                </div>
+            </header>
+            <section class="target-summary">
+                <div class="target-section">
+                    <h3>Monthly Target</h3>
+                    <div class="progress-circle" id="monthly-target"></div>
+                </div>
+                <div class="target-section">
+                    <h3>Daily Target</h3>
+                    <div class="progress-circle" id="daily-target"></div>
+                </div>
+            </section>
+            <section class="achievements">
+                <h3>Achievements</h3>
+                <div class="achievement-circles">
+                    <div class="circle" id="oc-target">
+                        <p>Orange Cash</p>
+                        <p>75%</p>
+                    </div>
+                    <div class="circle" id="points-target">
+                        <p>Points</p>
+                        <p>85%</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="JS/Dashboard.js"></script>
+</body>
+</html>
